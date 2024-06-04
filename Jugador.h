@@ -3,6 +3,9 @@
 
 #include <QGraphicsRectItem>
 #include <QKeyEvent>
+#include <QGraphicsScene>
+#include "proyectil.h"
+#include <QDebug>
 
 // Clase Jugador
 class Jugador: public QGraphicsRectItem {

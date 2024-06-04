@@ -24,6 +24,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ${PROJECT_SOURCES}
         Jugador.h
         Jugador.cpp
+        obstaculo.h obstaculo.cpp
+        proyectil.h proyectil.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET TeslaGame APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

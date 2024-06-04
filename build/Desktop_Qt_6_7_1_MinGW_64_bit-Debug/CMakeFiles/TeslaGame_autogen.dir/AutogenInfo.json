@@ -259,6 +259,18 @@
 			"MU",
 			"EWIEGA46WW/moc_Jugador.cpp",
 			null
+		],
+		[
+			"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideoJuego_michael/TeslaGame/obstaculo.h",
+			"MU",
+			"EWIEGA46WW/moc_obstaculo.cpp",
+			null
+		],
+		[
+			"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideoJuego_michael/TeslaGame/proyectil.h",
+			"MU",
+			"EWIEGA46WW/moc_proyectil.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -339,6 +351,16 @@
 		],
 		[
 			"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideoJuego_michael/TeslaGame/main.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideoJuego_michael/TeslaGame/obstaculo.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideoJuego_michael/TeslaGame/proyectil.cpp",
 			"MU",
 			null
 		]

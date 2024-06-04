@@ -1,6 +1,6 @@
 #include "Jugador.h"
 
-void Jugador::keyPressEvent(QKeyEvent * event)
+void Jugador::keyPressEvent(QKeyEvent *event)
 {
     if (event->key() == Qt::Key_Left){
         setPos(x() - 10, y());
@@ -13,6 +13,12 @@ void Jugador::keyPressEvent(QKeyEvent * event)
     }
     else if (event->key() == Qt::Key_Down){
         setPos(x(), y() + 10);
+    }
+    else if (event->key() == Qt::Key_Space){
+        Proyectil * proyectil = new Proyectil();
+        proyectil->setPos(x(),y());
+        qDebug() << "Proyectil creado";
+        scene()->addItem(proyectil);
     }
 }
 
