@@ -34,6 +34,7 @@ TeslaGame_autogen/timestamp: \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qdarwinhelpers.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qdatastream.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qdebug.h \
+  C:/Qt/6.7.1/mingw_64/include/QtCore/qendian.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qexceptionhandling.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qflags.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qfloat16.h \
@@ -119,10 +120,13 @@ TeslaGame_autogen/timestamp: \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qversiontagging.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qxptype_traits.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qyieldcpu.h \
+  C:/Qt/6.7.1/mingw_64/include/QtGui/qbrush.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qcolor.h \
+  C:/Qt/6.7.1/mingw_64/include/QtGui/qfont.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qimage.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qpaintdevice.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qpainterpath.h \
+  C:/Qt/6.7.1/mingw_64/include/QtGui/qpen.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qpixelformat.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qpixmap.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qpolygon.h \
@@ -136,7 +140,9 @@ TeslaGame_autogen/timestamp: \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/QGraphicsRectItem \
+  C:/Qt/6.7.1/mingw_64/include/QtWidgets/QGraphicsScene \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qgraphicsitem.h \
+  C:/Qt/6.7.1/mingw_64/include/QtWidgets/qgraphicsscene.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
