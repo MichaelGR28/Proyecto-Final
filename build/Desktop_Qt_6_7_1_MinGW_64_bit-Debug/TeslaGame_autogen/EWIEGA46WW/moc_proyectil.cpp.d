@@ -1,5 +1,7 @@
-C:/Users/yusti/OneDrive/Escritorio/Semestre\ 2024\ -\ 1\ UdeA/VideoJuego_michael/TeslaGame/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/TeslaGame_autogen/EWIEGA46WW/moc_proyectil.cpp: C:/Users/yusti/OneDrive/Escritorio/Semestre\ 2024\ -\ 1\ UdeA/VideoJuego_michael/TeslaGame/proyectil.h \
-  C:/Users/yusti/OneDrive/Escritorio/Semestre\ 2024\ -\ 1\ UdeA/VideoJuego_michael/TeslaGame/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/TeslaGame_autogen/moc_predefs.h \
+C:/Users/yusti/OneDrive/Escritorio/Semestre\ 2024\ -\ 1\ UdeA/VideJuego_michaelRojas/TeslaGame/TeslaGame/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/TeslaGame_autogen/EWIEGA46WW/moc_proyectil.cpp: C:/Users/yusti/OneDrive/Escritorio/Semestre\ 2024\ -\ 1\ UdeA/VideJuego_michaelRojas/TeslaGame/TeslaGame/proyectil.h \
+  C:/Users/yusti/OneDrive/Escritorio/Semestre\ 2024\ -\ 1\ UdeA/VideJuego_michaelRojas/TeslaGame/TeslaGame/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/TeslaGame_autogen/moc_predefs.h \
+  C:/Qt/6.7.1/mingw_64/include/QtCore/QDebug \
+  C:/Qt/6.7.1/mingw_64/include/QtCore/QList \
   C:/Qt/6.7.1/mingw_64/include/QtCore/QObject \
   C:/Qt/6.7.1/mingw_64/include/QtCore/QTimer \
   C:/Qt/6.7.1/mingw_64/include/QtCore/q20functional.h \
@@ -140,6 +142,7 @@ C:/Users/yusti/OneDrive/Escritorio/Semestre\ 2024\ -\ 1\ UdeA/VideoJuego_michael
   C:/Qt/6.7.1/mingw_64/include/QtGui/qtransform.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qwindowdefs_win.h \
+  C:/Qt/6.7.1/mingw_64/include/QtWidgets/QGraphicsItem \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/QGraphicsRectItem \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/QGraphicsScene \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qgraphicsitem.h \
@@ -345,4 +348,5 @@ C:/Users/yusti/OneDrive/Escritorio/Semestre\ 2024\ -\ 1\ UdeA/VideoJuego_michael
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/sys/types.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
-  C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h
+  C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
+  C:/Users/yusti/OneDrive/Escritorio/Semestre\ 2024\ -\ 1\ UdeA/VideJuego_michaelRojas/TeslaGame/TeslaGame/enemigo.h

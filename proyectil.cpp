@@ -1,43 +1,58 @@
 #include "proyectil.h"
+#include "game.h"
 
-#include <QDebug>
+extern Game * game;
 
+Proyectil::Proyectil(int _velX, int _velY, QGraphicsItem *parent)
+{
+    velX = _velX;
+    velY = _velY;
 
-Proyectil::Proyectil(int _vel_x, int _vel_y, int _pos_x0, int _pos_y0) {
-    // Dibujar proyectil
-    setRect(0, 0, 40, 40);
+    setRect(0,0,20,20);
 
-    this->vel_x = _vel_x;
-    this->vel_y = _vel_y;
-    this->pos_x0 = _pos_x0;
-    this->pos_y0 = _pos_y0;
-
-    qDebug("x0 = ", _pos_x0);
-    qDebug("y0 = ", _pos_y0);
-
-    //connect
-    QTimer * timer = new QTimer();
-    connect(timer, SIGNAL(timeout()),this,SLOT(move()));
+    timer = new QTimer(this);
+    connect(timer,SIGNAL(timeout()),this,SLOT(movimiento()));
 
     timer->start(50);
 }
 
-int Proyectil::calcular_posicion_y(){
-    return this->pos_y0 - this->vel_y * this->t + this->gravedad * this->t * this->t;
-}
-
-int Proyectil::calcular_posicion_x(){
-    return this->pos_x0 + this->vel_x * this->t;
-}
-
-void Proyectil::move()
+void Proyectil::posicionInicial()
 {
-    // Mover hacia arriba
-    setPos(this->calcular_posicion_x(), this->calcular_posicion_y());
-    this->t += 0.05;
-    if(pos().y() > scene()->height()) {
+    posX0 = pos().x();
+    posY0 = pos().y();
+}
+
+void Proyectil::movimiento()
+{
+    // get a list of all the items currently colliding with this bullet
+    QList<QGraphicsItem *> colliding_items = collidingItems();
+
+    // if one of the colliding items is an Enemy, destroy both the bullet and the enemy
+    for (int i = 0, n = colliding_items.size(); i < n; ++i){
+        if (typeid(*(colliding_items[i])) == typeid(Enemigo)){
+            // Incrementar puntuacion
+            game->puntaje->incrementarPuntuacion();
+
+            game->vida->incrementarVida();
+
+            // Eliminar de la escena el enemigo y el proyectil
+            scene()->removeItem(colliding_items[i]);
+            scene()->removeItem(this);
+
+            // Eliminar el enemigo y el proyectil
+            delete colliding_items[i];
+            delete this;
+
+            // return (all code below refers to a non existint bullet)
+            return;
+        }
+    }
+
+    tiempo += 0.05;
+    setPos(posX0 + velX*tiempo, posY0 + velY*tiempo + (gravedad/2)*tiempo*tiempo);
+
+    if(pos().y() + rect().height() >= scene()->height()){
         scene()->removeItem(this);
         delete this;
-        qDebug("Proyectil eliminado");
     }
 }

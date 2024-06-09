@@ -36,7 +36,7 @@ namespace {
 struct qt_meta_stringdata_CLASSProyectilENDCLASS_t {};
 constexpr auto qt_meta_stringdata_CLASSProyectilENDCLASS = QtMocHelpers::stringData(
     "Proyectil",
-    "move",
+    "movimiento",
     ""
 );
 #else  // !QT_MOC_HAS_STRINGDATA
@@ -75,7 +75,7 @@ Q_CONSTINIT const QMetaObject Proyectil::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSProyectilENDCLASS_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<Proyectil, std::true_type>,
-        // method 'move'
+        // method 'movimiento'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -87,7 +87,7 @@ void Proyectil::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
         auto *_t = static_cast<Proyectil *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->move(); break;
+        case 0: _t->movimiento(); break;
         default: ;
         }
     }

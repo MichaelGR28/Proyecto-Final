@@ -1,17 +1,17 @@
 {
-	"BUILD_DIR" : "C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideoJuego_michael/TeslaGame/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/TeslaGame_autogen",
-	"CMAKE_BINARY_DIR" : "C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideoJuego_michael/TeslaGame/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug",
-	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideoJuego_michael/TeslaGame/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug",
-	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideoJuego_michael/TeslaGame",
+	"BUILD_DIR" : "C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideJuego_michaelRojas/TeslaGame/TeslaGame/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/TeslaGame_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideJuego_michaelRojas/TeslaGame/TeslaGame/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideJuego_michaelRojas/TeslaGame/TeslaGame/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideJuego_michaelRojas/TeslaGame/TeslaGame",
 	"CMAKE_EXECUTABLE" : "C:/Qt/Tools/CMake_64/bin/cmake.exe",
 	"CMAKE_LIST_FILES" : 
 	[
-		"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideoJuego_michael/TeslaGame/CMakeLists.txt",
-		"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideoJuego_michael/TeslaGame/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake",
-		"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideoJuego_michael/TeslaGame/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CMakeSystem.cmake",
+		"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideJuego_michaelRojas/TeslaGame/TeslaGame/CMakeLists.txt",
+		"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideJuego_michaelRojas/TeslaGame/TeslaGame/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake",
+		"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideJuego_michaelRojas/TeslaGame/TeslaGame/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CMakeSystem.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake",
-		"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideoJuego_michael/TeslaGame/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CMakeCXXCompiler.cmake",
+		"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideJuego_michaelRojas/TeslaGame/TeslaGame/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CMakeCXXCompiler.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake",
@@ -24,7 +24,7 @@
 		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake",
-		"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideoJuego_michael/TeslaGame/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CMakeRCCompiler.cmake",
+		"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideJuego_michaelRojas/TeslaGame/TeslaGame/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CMakeRCCompiler.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeRCInformation.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake",
@@ -249,33 +249,51 @@
 		"C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginAdditionalTargetInfo.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/GNUInstallDirs.cmake"
 	],
-	"CMAKE_SOURCE_DIR" : "C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideoJuego_michael/TeslaGame",
-	"DEP_FILE" : "C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideoJuego_michael/TeslaGame/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/TeslaGame_autogen/deps",
+	"CMAKE_SOURCE_DIR" : "C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideJuego_michaelRojas/TeslaGame/TeslaGame",
+	"DEP_FILE" : "C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideJuego_michaelRojas/TeslaGame/TeslaGame/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/TeslaGame_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "TeslaGame_autogen/timestamp",
 	"HEADERS" : 
 	[
 		[
-			"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideoJuego_michael/TeslaGame/Jugador.h",
+			"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideJuego_michaelRojas/TeslaGame/TeslaGame/enemigo.h",
 			"MU",
-			"EWIEGA46WW/moc_Jugador.cpp",
+			"EWIEGA46WW/moc_enemigo.cpp",
 			null
 		],
 		[
-			"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideoJuego_michael/TeslaGame/obstaculo.h",
+			"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideJuego_michaelRojas/TeslaGame/TeslaGame/game.h",
 			"MU",
-			"EWIEGA46WW/moc_obstaculo.cpp",
+			"EWIEGA46WW/moc_game.cpp",
 			null
 		],
 		[
-			"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideoJuego_michael/TeslaGame/proyectil.h",
+			"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideJuego_michaelRojas/TeslaGame/TeslaGame/jugador.h",
+			"MU",
+			"EWIEGA46WW/moc_jugador.cpp",
+			null
+		],
+		[
+			"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideJuego_michaelRojas/TeslaGame/TeslaGame/proyectil.h",
 			"MU",
 			"EWIEGA46WW/moc_proyectil.cpp",
+			null
+		],
+		[
+			"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideJuego_michaelRojas/TeslaGame/TeslaGame/puntaje.h",
+			"MU",
+			"EWIEGA46WW/moc_puntaje.cpp",
+			null
+		],
+		[
+			"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideJuego_michaelRojas/TeslaGame/TeslaGame/vida.h",
+			"MU",
+			"EWIEGA46WW/moc_vida.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideoJuego_michael/TeslaGame/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/TeslaGame_autogen/include",
-	"MOC_COMPILATION_FILE" : "C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideoJuego_michael/TeslaGame/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/TeslaGame_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideJuego_michaelRojas/TeslaGame/TeslaGame/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/TeslaGame_autogen/include",
+	"MOC_COMPILATION_FILE" : "C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideJuego_michaelRojas/TeslaGame/TeslaGame/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/TeslaGame_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"MINGW_HAS_SECURE_API=1",
@@ -331,36 +349,51 @@
 		"-c",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideoJuego_michael/TeslaGame/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/TeslaGame_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideJuego_michaelRojas/TeslaGame/TeslaGame/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/TeslaGame_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 6,
-	"PARSE_CACHE_FILE" : "C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideoJuego_michael/TeslaGame/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/TeslaGame_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideJuego_michaelRojas/TeslaGame/TeslaGame/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/TeslaGame_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "C:/Qt/6.7.1/mingw_64/./bin/moc.exe",
 	"QT_UIC_EXECUTABLE" : "C:/Qt/6.7.1/mingw_64/./bin/uic.exe",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 7,
-	"SETTINGS_FILE" : "C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideoJuego_michael/TeslaGame/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/TeslaGame_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideJuego_michaelRojas/TeslaGame/TeslaGame/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/TeslaGame_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
-			"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideoJuego_michael/TeslaGame/Jugador.cpp",
+			"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideJuego_michaelRojas/TeslaGame/TeslaGame/enemigo.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideoJuego_michael/TeslaGame/main.cpp",
+			"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideJuego_michaelRojas/TeslaGame/TeslaGame/game.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideoJuego_michael/TeslaGame/obstaculo.cpp",
+			"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideJuego_michaelRojas/TeslaGame/TeslaGame/jugador.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideoJuego_michael/TeslaGame/proyectil.cpp",
+			"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideJuego_michaelRojas/TeslaGame/TeslaGame/main.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideJuego_michaelRojas/TeslaGame/TeslaGame/proyectil.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideJuego_michaelRojas/TeslaGame/TeslaGame/puntaje.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideJuego_michaelRojas/TeslaGame/TeslaGame/vida.cpp",
 			"MU",
 			null
 		]

@@ -2,26 +2,32 @@
 #define PROYECTIL_H
 
 #include <QGraphicsRectItem>
+#include <QGraphicsItem>
+#include <QObject>
 #include <QTimer>
 #include <QGraphicsScene>
-#include <QObject>
+#include <QList>
 
-class Proyectil: public QObject, public QGraphicsRectItem
-{
+#include "enemigo.h"
+
+#include <QDebug>
+
+class Proyectil: public QObject, public QGraphicsRectItem {
     Q_OBJECT
 public:
-    Proyectil(int _vel_x, int _vel_y, int _pos_x0, int _pos_y0);
-    int calcular_posicion_y();
-    int calcular_posicion_x();
+    Proyectil(int _velX, int _velY, QGraphicsItem * parent = nullptr);
+    void posicionInicial();
+
+    QTimer * timer;
 public slots:
-    void move();
+    void movimiento();
 private:
-    float vel_x;
-    float vel_y;
-    float pos_x0;
-    float pos_y0;
-    float gravedad = 200;
-    float t = 0;
+    int velX;
+    int velY;
+    int posX0;
+    int posY0;
+    float gravedad = 300;
+    float tiempo = 0;
 };
 
 #endif // PROYECTIL_H

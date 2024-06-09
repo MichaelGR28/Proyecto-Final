@@ -14,18 +14,19 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
 set(PROJECT_SOURCES
         main.cpp
-
-
+        game.cpp
+        game.h
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(TeslaGame
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
-        Jugador.h
-        Jugador.cpp
-        obstaculo.h obstaculo.cpp
+        jugador.h jugador.cpp
         proyectil.h proyectil.cpp
+        enemigo.h enemigo.cpp
+        puntaje.h puntaje.cpp
+        vida.h vida.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET TeslaGame APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
