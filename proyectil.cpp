@@ -32,7 +32,6 @@ void Proyectil::movimiento()
         if (typeid(*(colliding_items[i])) == typeid(Enemigo)){
             // Incrementar puntuacion
             game->puntaje->incrementarPuntuacion();
-
             game->vida->incrementarVida();
 
             // Eliminar de la escena el enemigo y el proyectil
