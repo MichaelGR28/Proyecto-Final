@@ -17,7 +17,6 @@ public:
     int getAlto();
     int getAncho();
 private:
-    float coeficienteRestitucion;
     int posx;
     int posy;
     int alto;

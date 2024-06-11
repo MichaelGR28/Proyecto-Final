@@ -395,9 +395,12 @@ C:/Users/yusti/OneDrive/Escritorio/Semestre\ 2024\ -\ 1\ UdeA/VideJuego_michaelR
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
+  C:/Users/yusti/OneDrive/Escritorio/Semestre\ 2024\ -\ 1\ UdeA/VideJuego_michaelRojas/TeslaGame/activador.h \
   C:/Users/yusti/OneDrive/Escritorio/Semestre\ 2024\ -\ 1\ UdeA/VideJuego_michaelRojas/TeslaGame/enemigo.h \
   C:/Users/yusti/OneDrive/Escritorio/Semestre\ 2024\ -\ 1\ UdeA/VideJuego_michaelRojas/TeslaGame/jugador.h \
   C:/Users/yusti/OneDrive/Escritorio/Semestre\ 2024\ -\ 1\ UdeA/VideJuego_michaelRojas/TeslaGame/muro.h \
+  C:/Users/yusti/OneDrive/Escritorio/Semestre\ 2024\ -\ 1\ UdeA/VideJuego_michaelRojas/TeslaGame/obstaculo.h \
   C:/Users/yusti/OneDrive/Escritorio/Semestre\ 2024\ -\ 1\ UdeA/VideJuego_michaelRojas/TeslaGame/proyectil.h \
+  C:/Users/yusti/OneDrive/Escritorio/Semestre\ 2024\ -\ 1\ UdeA/VideJuego_michaelRojas/TeslaGame/puerta.h \
   C:/Users/yusti/OneDrive/Escritorio/Semestre\ 2024\ -\ 1\ UdeA/VideJuego_michaelRojas/TeslaGame/puntaje.h \
   C:/Users/yusti/OneDrive/Escritorio/Semestre\ 2024\ -\ 1\ UdeA/VideJuego_michaelRojas/TeslaGame/vida.h

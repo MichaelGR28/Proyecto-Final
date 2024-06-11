@@ -13,6 +13,9 @@
 #include "puntaje.h"
 #include "vida.h"
 #include "muro.h"
+#include "obstaculo.h"
+#include "activador.h"
+#include "puerta.h"
 
 class Game :public QGraphicsView
 {
@@ -28,7 +31,9 @@ public:
     Puntaje * puntaje;
     Vida * vida;
     Muro * muro;
-    Muro * muro2;
+    Obstaculo * obstaculo;
+    Activador * activador;
+    Puerta * puerta;
 
 public slots:
     void spawn();

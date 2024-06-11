@@ -27,8 +27,9 @@ void Proyectil::movimiento()
     // get a list of all the items currently colliding with this bullet
     QList<QGraphicsItem *> colliding_items = collidingItems();
 
-    // if one of the colliding items is an Enemy, destroy both the bullet and the enemy
+    // Eliminar proyectil y enemigo cuando colisionen
     for (int i = 0, n = colliding_items.size(); i < n; ++i){
+        // Colisiones enemigos
         if (typeid(*(colliding_items[i])) == typeid(Enemigo)){
             // Incrementar puntuacion
             game->puntaje->incrementarPuntuacion();
@@ -42,7 +43,30 @@ void Proyectil::movimiento()
             delete colliding_items[i];
             delete this;
 
-            // return (all code below refers to a non existint bullet)
+            return;
+        }
+
+        if (typeid(*(colliding_items[i])) == typeid(Obstaculo)) {
+
+            Obstaculo * obstaculo = dynamic_cast<Obstaculo*>(colliding_items[i]);
+
+            velY = velY + gravedad*tiempo;
+            velY = -velY*obstaculo->getCoeficienteE();
+            posX0 = pos().x();
+            posY0 = pos().y();
+            tiempo = 0;
+        }
+
+        if (typeid(*(colliding_items[i])) == typeid(Activador)) {
+            qDebug() << "Haz golpeado al activador";
+
+            scene()->removeItem(game->puerta);
+            scene()->removeItem(colliding_items[i]);
+            scene()->removeItem(this);
+
+            delete game->puerta;
+            delete colliding_items[i];
+            delete this;
             return;
         }
     }

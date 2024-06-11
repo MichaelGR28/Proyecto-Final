@@ -9,6 +9,8 @@
 #include <QList>
 
 #include "enemigo.h"
+#include "obstaculo.h"
+#include "activador.h"
 
 #include <QDebug>
 

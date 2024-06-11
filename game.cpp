@@ -8,10 +8,10 @@ Game::Game(QWidget *parent) {
 
     // Crear escena
     scene = new QGraphicsScene();
-    scene->setSceneRect(0,0,1300,600);
+    scene->setSceneRect(40,40,1300,600);
 
     setScene(scene);
-    setFixedSize(1400,700);
+    //setFixedSize(1400,700);
 
     // Crear jugador
     jugador = new Jugador();
@@ -33,17 +33,33 @@ Game::Game(QWidget *parent) {
     // Añadir muro a la escena
     scene->addItem(muro);
 
-    // Crear muro 2
-    muro = new Muro(400,420,300,100);
-    muro->setRect(0,0,300,130);
-    muro->setPos(400, 420);
+    // Crear obstaculo 1
+    obstaculo = new Obstaculo(1);
+    obstaculo->setRect(0,0,300,5);
+    obstaculo->setPos(200,400);
 
-    // Añadir muro 2 a la escena
-    scene->addItem(muro);
+    // Añadir obstaculo a la escena
+    scene->addItem(obstaculo);
+
+    // Crear activador
+    activador = new Activador();
+    activador->setRect(0,0,50,50);
+    activador->setPos(400,400);
+
+    // Añadir activador a la escena
+    scene->addItem(activador);
 
     // Crear puntaje
     puntaje = new Puntaje();
     puntaje->setPos(scene->width() - puntaje->boundingRect().width(),0);
+
+    // Crear puerta
+    puerta = new Puerta();
+    puerta->setRect(0,0,100,900);
+    puerta->setPos(900,0);
+
+    // Añadir puerta a la escena
+    scene->addItem(puerta);
 
 
     // Añadir puntaje a la escena

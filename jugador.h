@@ -32,7 +32,6 @@ private:
     float vel_y = 0;
     float vel_xa = 0;
     int aceleracion_x = 0;
-    int aceleracion_y = 0;
     float tiempo = 0;
     float gravedad;
 

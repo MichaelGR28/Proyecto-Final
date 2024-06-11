@@ -568,6 +568,8 @@ TeslaGame_autogen/timestamp: \
   CMakeFiles/3.27.7/CMakeRCCompiler.cmake \
   CMakeFiles/3.27.7/CMakeSystem.cmake \
   TeslaGame_autogen/moc_predefs.h \
+  C:/Users/yusti/OneDrive/Escritorio/Semestre\ 2024\ -\ 1\ UdeA/VideJuego_michaelRojas/TeslaGame/activador.cpp \
+  C:/Users/yusti/OneDrive/Escritorio/Semestre\ 2024\ -\ 1\ UdeA/VideJuego_michaelRojas/TeslaGame/activador.h \
   C:/Users/yusti/OneDrive/Escritorio/Semestre\ 2024\ -\ 1\ UdeA/VideJuego_michaelRojas/TeslaGame/enemigo.cpp \
   C:/Users/yusti/OneDrive/Escritorio/Semestre\ 2024\ -\ 1\ UdeA/VideJuego_michaelRojas/TeslaGame/enemigo.h \
   C:/Users/yusti/OneDrive/Escritorio/Semestre\ 2024\ -\ 1\ UdeA/VideJuego_michaelRojas/TeslaGame/game.cpp \
@@ -577,8 +579,12 @@ TeslaGame_autogen/timestamp: \
   C:/Users/yusti/OneDrive/Escritorio/Semestre\ 2024\ -\ 1\ UdeA/VideJuego_michaelRojas/TeslaGame/main.cpp \
   C:/Users/yusti/OneDrive/Escritorio/Semestre\ 2024\ -\ 1\ UdeA/VideJuego_michaelRojas/TeslaGame/muro.cpp \
   C:/Users/yusti/OneDrive/Escritorio/Semestre\ 2024\ -\ 1\ UdeA/VideJuego_michaelRojas/TeslaGame/muro.h \
+  C:/Users/yusti/OneDrive/Escritorio/Semestre\ 2024\ -\ 1\ UdeA/VideJuego_michaelRojas/TeslaGame/obstaculo.cpp \
+  C:/Users/yusti/OneDrive/Escritorio/Semestre\ 2024\ -\ 1\ UdeA/VideJuego_michaelRojas/TeslaGame/obstaculo.h \
   C:/Users/yusti/OneDrive/Escritorio/Semestre\ 2024\ -\ 1\ UdeA/VideJuego_michaelRojas/TeslaGame/proyectil.cpp \
   C:/Users/yusti/OneDrive/Escritorio/Semestre\ 2024\ -\ 1\ UdeA/VideJuego_michaelRojas/TeslaGame/proyectil.h \
+  C:/Users/yusti/OneDrive/Escritorio/Semestre\ 2024\ -\ 1\ UdeA/VideJuego_michaelRojas/TeslaGame/puerta.cpp \
+  C:/Users/yusti/OneDrive/Escritorio/Semestre\ 2024\ -\ 1\ UdeA/VideJuego_michaelRojas/TeslaGame/puerta.h \
   C:/Users/yusti/OneDrive/Escritorio/Semestre\ 2024\ -\ 1\ UdeA/VideJuego_michaelRojas/TeslaGame/puntaje.cpp \
   C:/Users/yusti/OneDrive/Escritorio/Semestre\ 2024\ -\ 1\ UdeA/VideJuego_michaelRojas/TeslaGame/puntaje.h \
   C:/Users/yusti/OneDrive/Escritorio/Semestre\ 2024\ -\ 1\ UdeA/VideJuego_michaelRojas/TeslaGame/vida.cpp \

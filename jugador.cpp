@@ -22,9 +22,9 @@ void Jugador::keyPressEvent(QKeyEvent *event) {
         if (!event->isAutoRepeat()){
             pos_x0 = pos().x();
             pos_y0 = pos().y();
-            gravedad = 200;
-            tiempo = 0;
             vel_x = 0;
+            vel_y = vel_y + gravedad*tiempo;
+            tiempo = 0;
         }
     }
     if (event->key() == Qt::Key_Right) {
@@ -32,12 +32,12 @@ void Jugador::keyPressEvent(QKeyEvent *event) {
         if (!event->isAutoRepeat()){
             pos_x0 = pos().x();
             pos_y0 = pos().y();
-            gravedad = 200;
-            tiempo = 0;
             vel_x = 0;
+            vel_y = vel_y + gravedad*tiempo;
+            tiempo = 0;
         }
     }
-    // Salto del juegador
+    // Salto del jugador
     if (!event->isAutoRepeat()){
         if (event->key() == Qt::Key_Up) {
             vel_y = -300;
@@ -45,7 +45,6 @@ void Jugador::keyPressEvent(QKeyEvent *event) {
             pos_x0 = pos().x();
             pos_y0 = pos().y();
             tiempo = 0;
-            qDebug() << "Se realizo un salto";
         }
     }
 
@@ -73,15 +72,13 @@ void Jugador::keyReleaseEvent(QKeyEvent *event)
         if (event->key() == Qt::Key_Left) {
             pos_x0 = pos().x();
             pos_y0 = pos().y();
-            gravedad = 200;
             vel_x = vel_xa;
             vel_y = vel_y + gravedad*tiempo;
             aceleracion_x = 200;
             tiempo = 0;
-        } else if(event->key() == Qt::Key_Right){
+        } else if(event->key() == Qt::Key_Right && aceleracion_x != 0){
             pos_x0 = pos().x();
             pos_y0 = pos().y();
-            gravedad = 200;
             vel_x = vel_x + aceleracion_x*tiempo;
             vel_y = vel_y + gravedad*tiempo;
             aceleracion_x = -200;
@@ -107,7 +104,6 @@ void Jugador::colisiones()
 
     for (int i = 0, n = colliding_items.size(); i < n; ++i){
         if (typeid(*(colliding_items[i])) == typeid(Muro)){
-            //qDebug() << "El jugador colisiono con un muro";
 
             // Obtener los bordes del jugador y del muro
             QRectF jugadorRect = this->boundingRect();
@@ -117,34 +113,31 @@ void Jugador::colisiones()
             QPointF jugadorPos = this->pos();
             QPointF muroPos = colliding_items[i]->pos();
 
-            // qDebug() << "jugadorAncho: " << jugadorRect.width();
-            // qDebug() << "jugadorAlto: " << jugadorRect.height();
-            // qDebug() << "jugadorPosX: " << jugadorPos.x();
-            // qDebug() << "jugadorPosY: " << jugadorPos.y();
-
-            // qDebug() << "muroAncho: " << muroRect.width();
-            // qDebug() << "muroAlto: " << muroRect.height();
-            // qDebug() << "muroPosX: " << muroPos.x();
-            // qDebug() << "muroPosY: " << muroPos.y();
-
             // Colision por arriba
             if(jugadorPos.y() < muroPos.y() && (jugadorPos.y() + jugadorRect.height()) >= muroPos.y()) {
                 setPos(jugadorPos.x(), jugadorPos.y() - (jugadorPos.y() + jugadorRect.height() - muroPos.y() + 1));
                 gravedad = 0;
+                vel_x = vel_x + gravedad*tiempo;
                 vel_y = 0;
-                pos_y0 = jugadorPos.y() - (jugadorPos.y() + jugadorRect.height() - muroPos.y());
-            }
-            // Colision por abajo
-
-            // Colision por la izquierda
-            if(jugadorPos.x() < muroPos.x() && (jugadorPos.x() + jugadorRect.width()) >= muroPos.x()) {
-                setPos(jugadorPos.x() - (jugadorPos.x() + jugadorRect.width() - muroPos.x() + 1), jugadorPos.y());
-                vel_x = 0;
-                aceleracion_x = 0;
                 tiempo = 0;
-                pos_x0 = jugadorPos.x() - (jugadorPos.x() + jugadorRect.width() - muroPos.x() + 1);
+                pos_y0 = muroPos.y() - jugadorRect.height();
+                pos_x0 = jugadorPos.x();
             }
-            // Colision por la derecha
+
+            return;
+        }
+
+        // Colision puerta
+        if (typeid(*(colliding_items[i])) == typeid(Puerta)) {
+            QPointF posPuerta = colliding_items[i]->pos();
+
+            setPos(posPuerta.x() - this->rect().width() - 1, pos().y());
+            vel_x = 0;
+            aceleracion_x = 0;
+            vel_y = vel_y + gravedad*tiempo;
+            tiempo = 0;
+            pos_y0 = pos().y();
+            pos_x0 = posPuerta.x() - this->rect().width() - 1;
 
             return;
         }
@@ -159,18 +152,22 @@ void Jugador::colisiones()
         pos_y0 = pos().y();
         vel_x = 0;
         vel_y = vel_y + gravedad*tiempo;
-        gravedad = 200;
         tiempo = 0;
-    } else if (vel_xa >= 200 && aceleracion_x <= 0.0001 && aceleracion_x >= -0.0001) {
+    } else if (vel_xa >= 300 && (aceleracion_x >= 1 || aceleracion_x <= -1)) {
         pos_x0 = pos().x();
+        pos_y0 = pos().y();
+        vel_x = 300;
+        vel_y = vel_y + gravedad*tiempo;
         tiempo = 0;
         aceleracion_x = 0;
-        vel_x = 200;
-    } else if (vel_xa <= -200 && aceleracion_x <= 0.0001 && aceleracion_x >= -0.0001) {
+
+    } else if (vel_xa <= -300 && (aceleracion_x >= 1 || aceleracion_x <= -1)) {
         pos_x0 = pos().x();
+        pos_y0 = pos().y();
+        vel_x = -300;
+        vel_y = vel_y + gravedad*tiempo;
         tiempo = 0;
         aceleracion_x = 0;
-        vel_x = -200;
     }
 
     setPos(pos_x0 + vel_x*tiempo + aceleracion_x*tiempo*tiempo/2,pos_y0 + vel_y*tiempo + gravedad*tiempo*tiempo/2);

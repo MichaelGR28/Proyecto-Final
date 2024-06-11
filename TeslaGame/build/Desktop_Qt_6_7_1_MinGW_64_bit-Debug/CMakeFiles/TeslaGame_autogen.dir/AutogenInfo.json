@@ -255,6 +255,12 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideJuego_michaelRojas/TeslaGame/activador.h",
+			"MU",
+			"EWIEGA46WW/moc_activador.cpp",
+			null
+		],
+		[
 			"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideJuego_michaelRojas/TeslaGame/enemigo.h",
 			"MU",
 			"EWIEGA46WW/moc_enemigo.cpp",
@@ -279,9 +285,21 @@
 			null
 		],
 		[
+			"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideJuego_michaelRojas/TeslaGame/obstaculo.h",
+			"MU",
+			"EWIEGA46WW/moc_obstaculo.cpp",
+			null
+		],
+		[
 			"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideJuego_michaelRojas/TeslaGame/proyectil.h",
 			"MU",
 			"EWIEGA46WW/moc_proyectil.cpp",
+			null
+		],
+		[
+			"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideJuego_michaelRojas/TeslaGame/puerta.h",
+			"MU",
+			"EWIEGA46WW/moc_puerta.cpp",
 			null
 		],
 		[
@@ -369,6 +387,11 @@
 	"SOURCES" : 
 	[
 		[
+			"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideJuego_michaelRojas/TeslaGame/activador.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideJuego_michaelRojas/TeslaGame/enemigo.cpp",
 			"MU",
 			null
@@ -394,7 +417,17 @@
 			null
 		],
 		[
+			"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideJuego_michaelRojas/TeslaGame/obstaculo.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideJuego_michaelRojas/TeslaGame/proyectil.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/yusti/OneDrive/Escritorio/Semestre 2024 - 1 UdeA/VideJuego_michaelRojas/TeslaGame/puerta.cpp",
 			"MU",
 			null
 		],

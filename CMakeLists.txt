@@ -28,6 +28,9 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         puntaje.h puntaje.cpp
         vida.h vida.cpp
         muro.h muro.cpp
+        obstaculo.h obstaculo.cpp
+        puerta.h puerta.cpp
+        activador.h activador.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET TeslaGame APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

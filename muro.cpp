@@ -16,3 +16,4 @@ int Muro::getAncho()
 {
     return ancho;
 }
+
