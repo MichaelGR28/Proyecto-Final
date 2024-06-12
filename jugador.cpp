@@ -7,10 +7,20 @@ Jugador::Jugador(QGraphicsItem *parent): QGraphicsRectItem(parent) {
     vel_x = 0;
     vel_y = 0;
     gravedad = 200;
+    fila = 64*7;
+    columna = 0;
+
+    alto = 64;
+    ancho = 64;
+
+    pixmap = new QPixmap(":/imagenes/Movimiento_Jugador.png");
 
     timer = new QTimer(this);
+    timerSprite = new QTimer(this);
     connect(timer,SIGNAL(timeout()),this,SLOT(colisiones()));
+    connect(timerSprite,SIGNAL(timeout()),this,SLOT(actualizarSprite()));
 
+    timerSprite->start(150);
     timer->start(10);
 }
 
@@ -24,6 +34,7 @@ void Jugador::keyPressEvent(QKeyEvent *event) {
             pos_y0 = pos().y();
             vel_x = 0;
             vel_y = vel_y + gravedad*tiempo;
+            fila = 64*9;
             tiempo = 0;
         }
     }
@@ -34,6 +45,7 @@ void Jugador::keyPressEvent(QKeyEvent *event) {
             pos_y0 = pos().y();
             vel_x = 0;
             vel_y = vel_y + gravedad*tiempo;
+            fila = 64*11;
             tiempo = 0;
         }
     }
@@ -50,13 +62,13 @@ void Jugador::keyPressEvent(QKeyEvent *event) {
 
     // Disparos jugador
     if (event->key() == Qt::Key_A) {
-        proyectil = new Proyectil(-300,-300);
+        proyectil = new Proyectil(-300,-200);
         proyectil->setPos(pos().x() + this->rect().width()/2-proyectil->rect().width()/2, pos().y());
         proyectil->posicionInicial();
         scene()->addItem(proyectil);
     }
     if(event->key() == Qt::Key_D){
-        proyectil = new Proyectil(300,-300);
+        proyectil = new Proyectil(300,-200);
         proyectil->setPos(pos().x() + this->rect().width()/2-proyectil->rect().width()/2, pos().y());
         proyectil->posicionInicial();
         scene()->addItem(proyectil);
@@ -75,6 +87,7 @@ void Jugador::keyReleaseEvent(QKeyEvent *event)
             vel_x = vel_xa;
             vel_y = vel_y + gravedad*tiempo;
             aceleracion_x = 200;
+            fila = 64*5;
             tiempo = 0;
         } else if(event->key() == Qt::Key_Right && aceleracion_x != 0){
             pos_x0 = pos().x();
@@ -82,6 +95,7 @@ void Jugador::keyReleaseEvent(QKeyEvent *event)
             vel_x = vel_x + aceleracion_x*tiempo;
             vel_y = vel_y + gravedad*tiempo;
             aceleracion_x = -200;
+            fila = 64*7;
             tiempo = 0;
         }
     }
@@ -98,6 +112,16 @@ void Jugador::posicionInicial()
     pos_y0 = pos().y();
 }
 
+QRectF Jugador::boundingRect() const
+{
+    return QRectF(0,0,ancho,alto);
+}
+
+void Jugador::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
+{
+    painter->drawPixmap(0,0,*pixmap,columna,fila,ancho,alto);
+}
+
 void Jugador::colisiones()
 {
     QList<QGraphicsItem *> colliding_items = collidingItems();
@@ -105,9 +129,10 @@ void Jugador::colisiones()
     for (int i = 0, n = colliding_items.size(); i < n; ++i){
         if (typeid(*(colliding_items[i])) == typeid(Muro)){
 
+            qDebug() << "Colisiono";
+
             // Obtener los bordes del jugador y del muro
             QRectF jugadorRect = this->boundingRect();
-            QRectF muroRect = colliding_items[i]->boundingRect();
 
             // Obtener las posiciones actuales
             QPointF jugadorPos = this->pos();
@@ -172,4 +197,13 @@ void Jugador::colisiones()
 
     setPos(pos_x0 + vel_x*tiempo + aceleracion_x*tiempo*tiempo/2,pos_y0 + vel_y*tiempo + gravedad*tiempo*tiempo/2);
 
+}
+
+void Jugador::actualizarSprite()
+{
+    columna += 64;
+    if(columna == 64*7) {
+        columna = 0;
+    }
+    this->update(0,0,ancho,alto);
 }

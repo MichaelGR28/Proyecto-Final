@@ -24,7 +24,6 @@ void Proyectil::posicionInicial()
 
 void Proyectil::movimiento()
 {
-    // get a list of all the items currently colliding with this bullet
     QList<QGraphicsItem *> colliding_items = collidingItems();
 
     // Eliminar proyectil y enemigo cuando colisionen

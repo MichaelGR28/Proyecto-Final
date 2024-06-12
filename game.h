@@ -7,6 +7,8 @@
 #include <QTimer>
 #include <QGraphicsTextItem>
 #include <QFont>
+#include <QPainter>
+#include <QRectF>
 
 #include "jugador.h"
 #include "enemigo.h"
@@ -16,6 +18,8 @@
 #include "obstaculo.h"
 #include "activador.h"
 #include "puerta.h"
+
+#include <QDebug>
 
 class Game :public QGraphicsView
 {
@@ -37,5 +41,12 @@ public:
 
 public slots:
     void spawn();
+    void verificarCambioMapa();
+    void crearNuevoMapa();
+private:
+    void crearMapaUno();
+    void crearMapaDos();
+    int nivel;
+
 };
 #endif // GAME_H

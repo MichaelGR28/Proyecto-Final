@@ -8,7 +8,7 @@
 #include <QGraphicsScene>
 #include <QList>
 
-class Puerta: public QObject,public QGraphicsRectItem {
+class Puerta: public QObject, public QGraphicsRectItem {
     Q_OBJECT
 public:
     Puerta(QGraphicsItem * parent = nullptr);

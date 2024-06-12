@@ -9,6 +9,8 @@
 #include <QTimer>
 #include <QGraphicsScene>
 #include <QList>
+#include <QPixmap>
+#include <QPainter>
 
 #include "proyectil.h"
 
@@ -22,9 +24,19 @@ public:
     void keyReleaseEvent(QKeyEvent *event);
     int getPosX();
     void posicionInicial();
+
     QTimer * timer;
+    QTimer * timerSprite;
+    QPixmap * pixmap;
+
+    float fila, columna;
+    float alto, ancho;
+
+    QRectF boundingRect() const;
+    void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
 public slots:
     void colisiones();
+    void actualizarSprite();
 private:
     float pos_x0;
     float pos_y0;

@@ -5,8 +5,8 @@
 extern Game * game;
 
 Enemigo::Enemigo(QGraphicsItem *parent): QObject(), QGraphicsRectItem() {
-    int random_number = rand() % 700;
-    setPos(random_number,0);
+    int random_number = rand() % 450;
+    setPos(game->scene->width() - 100,random_number);
 
     setRect(0,0,100,100);
 
@@ -19,16 +19,14 @@ Enemigo::Enemigo(QGraphicsItem *parent): QObject(), QGraphicsRectItem() {
 
 void Enemigo::movimiento()
 {
-    if(pos().y() + game->jugador->rect().width() >= scene()->height() - game->jugador->rect().height()){
-        if(((game->jugador->pos().x() <= this->pos().x()) && (game->jugador->pos().x() + game->jugador->rect().width()) >= this->pos().x()) || ((game->jugador->pos().x() >= this->pos().x()) && (game->jugador->pos().x()) <= this->pos().x() + this->rect().width())){
-            game->vida->quitarVida();
-            scene()->removeItem(this);
-            delete this;
-            return;
-        }
+    if(game->jugador->collidesWithItem(this)){
+        game->vida->quitarVida();
+        scene()->removeItem(this);
+        delete this;
+        return;
     }
 
-    setPos(x(),y()+5);
+    setPos(x()-5,y());
 
     if(pos().y() + rect().height() >= scene()->height()){
         scene()->removeItem(this);
